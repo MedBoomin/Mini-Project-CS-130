@@ -116,8 +116,8 @@ def hook():
         if data is None:
             return 'Invalid JSON data', 400
 
-        if 'integer' in data:
-            integer = data['integer']
+        if 'number' in data:
+            integer = data['number']
 
             # Decide whether to store as INTEGER or TEXT based on a threshold
             if integer <= 2147483647:  # SQLite maximum INTEGER value
@@ -208,4 +208,4 @@ if __name__ == '__main__':
     processing_thread.start()
 
     # Start the Flask web application
-    app.run(port=5000, threaded=True)
+    app.run(host="0.0.0.0", port=80, threaded=True)
