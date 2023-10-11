@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Input</th>
+        <th>Result</th>
+        <th>Timestamp</th>
+    </tr>
+    {% for row in data %}
+    <tr>
+        <td>{{ row.input }}</td>
+        <td>{{ row.result }}</td>
+        <td>{{ row.timestamp }}</td>
+    </tr>
+    {% endfor %}
+</table>

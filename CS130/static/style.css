@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color for the entire page */
+}
+
+h1 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #0066cc; /* Vibrant header color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Table background color */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0066cc; /* Header cell background color */
+    color: #fff; /* Header text color */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+#clear-button {
+    background-color: #ff0000; /* Vibrant clear button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#clear-button:hover {
+    background-color: #ff3333; /* Hover color for the button */
+}
+
+#queue-state {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
